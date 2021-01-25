@@ -7,12 +7,15 @@ use Illuminate\Http\Request;
 class mainController extends Controller
 {
   public function home(){
-    return view('pages.home');
+    $placeholder = 'home';
+    return view('pages.home',compact('placeholder'));
   }
   public function blog(){
-    return view('pages.blog');
+    $placeholder = 'blog';
+    return view('pages.blog' , compact('placeholder'));
   }
   public function about(){
-    return view('pages.about');
+    $placeholder = 'about';
+    return view('pages.about' , compact('placeholder'));
   }
 }
