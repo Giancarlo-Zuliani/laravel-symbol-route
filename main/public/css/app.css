@@ -8,6 +8,21 @@ h1 {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  padding: 35px;
+  color: #c2cad0;
+  border-radius: 25px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.console {
+  margin-bottom: 25px;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -17,6 +32,8 @@ main {
   color: #c2cad0;
   font-size: 1.8rem;
   margin-top: 200px;
+  background-color: #7e685a;
+  height: calc(100vh - 400px);
 }
 
 header {
@@ -33,6 +50,10 @@ header {
   left: 0;
 }
 
+header a {
+  background-color: #e7717d;
+}
+
 footer {
   background-color: #e7717d;
   color: #c2cad0;
@@ -46,5 +67,10 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
+}
+
+footer a {
+  background-color: #afd275;
+  color: #000;
 }
 

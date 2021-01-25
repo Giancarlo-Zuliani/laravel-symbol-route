@@ -4,4 +4,7 @@ header{
   width:100%;
   @include flex;
   @include fixedToTop;
+  a{
+    background-color: $footerBackground;
+  }
 }

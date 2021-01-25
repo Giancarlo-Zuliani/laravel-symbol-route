@@ -7,3 +7,17 @@
 h1{
   width:100%;
 }
+
+a{
+  text-decoration: none;
+  padding:35px;
+  color:$txtcolor;
+  border-radius: 25px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.console{
+  margin-bottom: 25px;
+}

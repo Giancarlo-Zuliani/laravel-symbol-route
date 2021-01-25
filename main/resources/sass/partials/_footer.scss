@@ -5,4 +5,8 @@ footer{
   width:100%;
   height:$mainheight;
   @include fixedToBottom;
+  a{
+    background-color: $headerBackground;
+    color:#000;
+  }
 }
