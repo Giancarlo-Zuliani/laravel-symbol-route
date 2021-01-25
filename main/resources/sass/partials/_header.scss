@@ -1,0 +1,7 @@
+header{
+  background-color: $headerBackground;
+  height: $mainheight;
+  width:100%;
+  @include flex;
+  @include fixedToTop;
+}

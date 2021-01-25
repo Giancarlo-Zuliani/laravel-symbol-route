@@ -1,0 +1,19 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@mixin fixedToTop{
+  position: fixed;
+  top:0;
+  left:0;
+}
+
+@mixin fixedToBottom{
+  position: fixed;
+  bottom:0;
+  left:0;
+}
