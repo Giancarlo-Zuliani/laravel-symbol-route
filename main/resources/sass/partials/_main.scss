@@ -4,5 +4,5 @@ main{
   font-size: 1.8rem;
   margin-top:$mainheight;
   background-color: $mainBackground;
-  height: calc(100vh - 400px);
+  height: calc(100vh - (#{$mainheight} * 2));
 }
