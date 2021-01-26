@@ -7,14 +7,18 @@
 
 main{
   background-color: $mainback;
-  height: calc(100vh - (#{$mainmargin} ));
+  height: calc(100vh - (#{$mainmargin} * 2 ));
   overflow-y:auto;
   margin-top: $mainmargin;
   ul , li{
     list-style: none;
+    width:50%;
+    margin:15px auto;
   }
   ul li {
     @include flex;
-    margin: 15px auto;
+    h5{
+      margin-left: 10px;
+    }
   }
 }

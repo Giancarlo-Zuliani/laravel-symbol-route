@@ -41,8 +41,8 @@ class mainController extends Controller
       ['id' => '29','status' => 'rejected','price' => '88.00','prenotazione_id' => '29','pagante_id' => '21','created_at' => '2018-05-28 13:53:45','updated_at' => '2018-05-28 13:53:45'],
       ['id' => '30','status' => 'pending','price' => '991.00','prenotazione_id' => '30','pagante_id' => '21','created_at' => '2018-05-28 13:53:45','updated_at' => '2018-05-28 13:53:45']
     ];
-
-    return view('pages.payment' , compact('payments'));
+    $placeholder = 'payment';
+    return view('pages.payment' , compact('payments' , 'placeholder'));
   }
 
   public function pending(){
@@ -78,7 +78,7 @@ class mainController extends Controller
       ['id' => '29','status' => 'rejected','price' => '88.00','prenotazione_id' => '29','pagante_id' => '21','created_at' => '2018-05-28 13:53:45','updated_at' => '2018-05-28 13:53:45'],
       ['id' => '30','status' => 'pending','price' => '991.00','prenotazione_id' => '30','pagante_id' => '21','created_at' => '2018-05-28 13:53:45','updated_at' => '2018-05-28 13:53:45']
     ];
-
+    $placeholder = 'pending';
     $payments = [];
 
     foreach ($data as $pay) {
@@ -86,6 +86,6 @@ class mainController extends Controller
       array_push($payments , $pay);
       }
     }
-    return view('pages.payment' , compact('payments'));
+    return view('pages.payment' , compact('payments' , 'placeholder'));
   }
 }

@@ -2,5 +2,5 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/' ,'mainController@payment');
-Route::get('/pending' , 'mainController@pending');
+Route::get('/' ,'mainController@payment') -> name('payment');
+Route::get('/pending' , 'mainController@pending') -> name('pending');
