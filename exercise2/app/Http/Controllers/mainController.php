@@ -83,7 +83,7 @@ class mainController extends Controller
 
     foreach ($data as $pay) {
       if($pay['status'] === 'pending'){
-        $pending[] = $pay;
+      array_push($payments , $pay);
       }
     }
     return view('pages.payment' , compact('payments'));
