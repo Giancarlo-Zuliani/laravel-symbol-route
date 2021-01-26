@@ -1,0 +1,13 @@
+.red {
+  color: red;
+}
+
+.greem {
+  color: green;
+}
+
+main ul,
+main li {
+  list-style: none;
+}
+
