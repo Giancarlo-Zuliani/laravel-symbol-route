@@ -1,12 +1,20 @@
-.red{
-  color:red;
+.even{
+  color:$evencolor;
 }
-.greem{
-  color:green;
+.odd{
+  color:$oddcolor;
 }
 
 main{
+  background-color: $mainback;
+  height: calc(100vh - (#{$mainmargin} ));
+  overflow-y:auto;
+  margin-top: $mainmargin;
   ul , li{
     list-style: none;
+  }
+  ul li {
+    @include flex;
+    margin: 15px auto;
   }
 }

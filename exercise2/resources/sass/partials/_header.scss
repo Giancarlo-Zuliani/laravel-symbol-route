@@ -1,0 +1,11 @@
+header{
+  @include flex ;
+  background-color: $headedback;
+  height: $mainmargin;
+  width:100%;
+  @include fixedToTop;
+  h2{
+    height: 50%;
+    margin-top:calc(#{$mainmargin} / 2);
+  }
+}

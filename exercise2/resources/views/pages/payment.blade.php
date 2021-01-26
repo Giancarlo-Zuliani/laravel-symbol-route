@@ -5,12 +5,12 @@
     @forelse ($payments as $payments)
       @php
         if($loop -> even){
-          $color = "red";
+          $class = "even";
         } else{
-          $color = "green";
+          $class = "odd";
         }
       @endphp
-      <li class="{{$color}}">
+      <li class="{{$class}}">
         <h5>payment ID : {{$payments['id']}}</h5>
         <h5>status : {{$payments['status']}}</h5>
         <h5>price : {{$payments['price']}}</h5>

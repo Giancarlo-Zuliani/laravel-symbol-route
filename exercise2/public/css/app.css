@@ -1,13 +1,76 @@
-.red {
-  color: red;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.greem {
-  color: green;
+body {
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffe400;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+header h2 {
+  height: 50%;
+  margin-top: calc(100px / 2);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #747474;
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+footer h2 {
+  width: 100%;
+}
+
+footer div {
+  width: 100%;
+}
+
+.even {
+  color: #ff652f;
+}
+
+.odd {
+  color: #14a76c;
+}
+
+main {
+  background-color: #272727;
+  height: calc(100vh - (100px ));
+  overflow-y: auto;
+  margin-top: 100px;
 }
 
 main ul,
 main li {
   list-style: none;
+}
+
+main ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
 }
 

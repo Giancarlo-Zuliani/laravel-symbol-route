@@ -1,0 +1,15 @@
+footer{
+  @include flex;
+  background-color: $footerback;
+  height: $mainmargin;
+  width:100%;
+  @include fixedToBottom;
+  flex-wrap:wrap;
+  text-align: center;
+  h2{
+    width: 100%;
+  }
+  div{
+    width:100%;
+  }
+}
