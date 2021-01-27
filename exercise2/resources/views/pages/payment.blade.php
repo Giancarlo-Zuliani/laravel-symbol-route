@@ -20,5 +20,4 @@
       <h2 class="red">No payments found!!</h2>
     @endforelse
   </ul>
-</ul>
   @endsection
